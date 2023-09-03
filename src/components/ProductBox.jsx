@@ -3,7 +3,8 @@ import React from 'react';
 // eslint-disable-next-line react/prop-types
 const ProductBox = ({ title, content, description, image, onClickLink }) => {
   const handleButtonClick = () => {
-    window.open(onClickLink, '_blank'); // Open link in a new tab/window
+    console.log('onClickLink:', onClickLink);
+    window.open(onClickLink, onClickLink);
   };
   return (
     <div className="mt-6 py-8 px-5 border border-dark-green rounded-lg text-sm max-w-md flex flex-col justify-center">

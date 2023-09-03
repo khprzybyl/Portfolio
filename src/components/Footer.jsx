@@ -3,9 +3,9 @@ const Footer = () => {
     <footer className="bg-dark-green flex justify-center flex-col h-72  mt-10">
       <div className="text-sm flex flex-col justify-center items-center mb-10 gap-2">
         <p className="mb-10 text-xs font-bold ">
-          Strona dostępna będzie od 1 do 30 wrzesnia 2023 roku.
+          A może... chcesz mi towarzyszyć podczas wyprawy?
         </p>
-        <p>Masz pytania? Pisz, dzwoń śmiało:</p>
+        <p>Daj mi znać! a jeśli masz pytania, pisz lub dzwoń śmiało:</p>
         <button className="font-bold">
           <a href="mailto:khprzybyl@gmail.com ">khprzybyl@gmail.com</a>
         </button>
