@@ -1,4 +1,4 @@
-import background from '../assets/images/background.png';
+import background from '../assets/images/backgory.png';
 import logoIcon from '../assets/images/logo_28.jpg';
 
 const BackgroundImage = () => {
