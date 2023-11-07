@@ -14,6 +14,10 @@ module.exports = {
       ecru: '#F5F5DC',
       'dark-green': '#84A7A8',
       'light-green': '#F7F7F7',
+      'dark-blue': '#13171F',
+      white: '#FFF',
+      'white-gray': '#E3E3E3',
+      yellow: '#F9C200',
     },
 
     extend: {
