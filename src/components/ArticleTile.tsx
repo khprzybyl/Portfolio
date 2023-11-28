@@ -10,7 +10,7 @@ const ArticleTile = ({
   image,
 }) => {
   return (
-    <div className="flex flex-col justify-center items-center m-auto bg-white rounded-lg max-w-md">
+    <div className="flex flex-col justify-center items-center m-auto bg-white rounded-lg max-w-md hover:scale-105 duration-300">
       <div className="p-6">
         <a
           href="https://dlabs.ai/blog/how-to-use-llms-in-a-software-developers-work-case-study-included/"

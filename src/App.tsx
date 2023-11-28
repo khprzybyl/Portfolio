@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className="flex justify-between flex-col min-h-screen h-full px-10 pt-5">
         <Topbar />
-        <div className="text-white text-xs flex-col justify-between items-center mb-5 tracking-wider">
+        <div className="text-white text-xs flex-col justify-between items-center mb-5 tracking-wider ">
           <Routes>
             {routes.map((route, index) => (
               <Route

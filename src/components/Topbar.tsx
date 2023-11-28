@@ -5,7 +5,7 @@ import NavDesktop from './NavDesktop.tsx';
 const Topbar = () => {
   return (
     <div>
-      <nav className="text-white text-xs flex justify-between pb-5 border-b border-yellow lg:py-5 mb-6">
+      <nav className="text-white text-xs flex justify-between border-b border-yellow">
         <NavMobile />
         <NavDesktop />
       </nav>

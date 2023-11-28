@@ -10,14 +10,14 @@ const NavDesktop = () => {
   const cvFileName = 'katarzyna_przybyl_cv.pdf';
   return (
     <div className="flex gap-8 justify-between lg:flex-grow">
-      <ul className="hidden lg:flex lg:items-center gap-5 text-sm">
+      <ul className="hidden lg:flex lg:items-center gap-5">
         {routes.map((route) => {
           const { href, title } = route;
           return (
             <li key={title}>
               <Link
                 to={href}
-                className="text-xl active:text-yellow font-light active:font-bold focus:text-yellow focus:font-bold flex items-center gap-1 hover:text-yellow hover:text-yellow"
+                className="text-sm active:text-yellow font-light active:font-bold focus:text-yellow focus:font-bold flex items-center gap-1 hover:text-yellow hover:text-yellow"
               >
                 {title}
               </Link>
@@ -25,7 +25,7 @@ const NavDesktop = () => {
           );
         })}
       </ul>
-      <div className="text-white text-xs flex gap-3 items-center tracking-wider lg:py-5">
+      <div className="text-white text-xs flex gap-3 items-center tracking-wider py-5">
         <a
           href={`/${cvFileName}`}
           download

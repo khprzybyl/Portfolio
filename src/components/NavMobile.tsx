@@ -25,7 +25,7 @@ export const NavMobile = () => {
             transition={{
               duration: 0.1,
             }}
-            className="fixed left-0 shadow-4xl right-0 top-[6rem] p-5 pt-3 bg-dark-blue border-b border-b-yellow z-20"
+            className="fixed left-0 right-0 top-[6rem] p-5 pt-3 bg-dark-blue border-b border-b-yellow z-20"
           >
             <ul className="grid gap-2">
               {routes.map((route, idx) => {
@@ -40,16 +40,18 @@ export const NavMobile = () => {
                       delay: 0.1 + idx / 15,
                     }}
                     key={route.title}
-                    className="w-full p-[0.08rem] rounded-lg bg-gradient-to-tr from-gray-blue via-dark-blue to-gray-blue  hover:text-yellow hover:text-yellow"
+                    className="w-full hover:text-yellow hover:text-yellow"
                   >
                     <a
                       onClick={() => setOpen((prev) => !prev)}
                       className={
-                        'flex items-center justify-between w-full p-5 rounded-xl bg-neutral-950'
+                        'flex items-center justify-between w-full p-5 rounded-xl font-light active:font-bold'
                       }
                       href={route.href}
                     >
-                      <span className="flex gap-1 text-lg">{route.title}</span>
+                      <span className="flex gap-1 text-base">
+                        {route.title}
+                      </span>
                     </a>
                   </motion.li>
                 );
