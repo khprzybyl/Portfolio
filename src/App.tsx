@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { routes } from './components/routes.ts';
 import Topbar from './components/Topbar.tsx';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <div className="flex justify-between flex-col min-h-screen h-full px-10 pt-5">
@@ -29,6 +29,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;

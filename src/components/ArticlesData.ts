@@ -1,6 +1,15 @@
 import articleImage from '../assets/images/articleImage.jpg';
 import articleImage2 from '../assets/images/articleImage2.jpg';
 
+export interface Article {
+  id: number;
+  title: string;
+  subtitle: string;
+  description: string;
+  image: string;
+  onClickArticle: string;
+}
+
 export const ArticlesPack = [
   {
     id: 1,

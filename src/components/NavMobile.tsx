@@ -7,7 +7,7 @@ import { Squash as Hamburger } from 'hamburger-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { routes } from './routes';
 
-export const NavMobile = () => {
+export const NavMobile: React.FC = () => {
   const [isOpen, setOpen] = useState(false);
   const ref = useRef(null);
 

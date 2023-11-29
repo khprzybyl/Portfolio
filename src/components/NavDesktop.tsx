@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 import linkedin from '../assets/images/linkedin.png';
 import github from '../assets/images/github.png';
 import DownloadIcon from '../assets/images/downloadIcon.svg';
+import IconLink from './IconLink';
 
-const NavDesktop = () => {
+const NavDesktop: React.FC = () => {
   const cvFileName = 'katarzyna_przybyl_cv.pdf';
   return (
     <div className="flex gap-8 justify-between lg:flex-grow">
@@ -25,31 +26,23 @@ const NavDesktop = () => {
           );
         })}
       </ul>
-      <div className="text-white text-xs flex gap-3 items-center tracking-wider py-5">
-        <a
+      <div className="text-white text-xs flex gap-6 items-center tracking-wider py-5">
+        <IconLink
           href={`/${cvFileName}`}
-          download
-          className="items-start flex relative"
-        >
-          <p className="text-yellow font-bold text-lg absolute -top-3 -left-5">
-            CV
-          </p>
-          <img src={DownloadIcon} alt="Company Logo" className="h-8 mr-6" />
-        </a>
-        <a
-          href={'https://www.linkedin.com/in/katarzyna-przybyl/'}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={linkedin} alt="Linkedin logo" className="h-8 w-auto" />
-        </a>
-        <a
-          href={'https://github.com/khprzybyl'}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={github} alt="Github logo" className="h-8 w-auto " />
-        </a>
+          imgSrc={DownloadIcon}
+          altText="Download CV"
+          text="CV"
+        />
+        <IconLink
+          href="https://www.linkedin.com/in/katarzyna-przybyl/"
+          imgSrc={linkedin}
+          altText="Linkedin link"
+        />
+        <IconLink
+          href="https://github.com/khprzybyl"
+          imgSrc={github}
+          altText="GitHub link"
+        />
       </div>
     </div>
   );

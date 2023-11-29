@@ -1,8 +1,15 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import watchIcon from '../assets/images/watch.svg';
 
-const ArticleTile = ({
+interface ArticleTileProps {
+  title: string;
+  subtitle: string;
+  description: string;
+  onClickArticle: string;
+  image: string;
+}
+
+const ArticleTile: React.FC<ArticleTileProps> = ({
   title,
   subtitle,
   description,
@@ -31,7 +38,7 @@ const ArticleTile = ({
         >
           <img src={watchIcon} alt="Github logo" className="h-4 w-auto " />
 
-          <button className="text-dark-blue text-base font-light hover:text-orange">
+          <button className="text-dark-blue text-base font-bold hover:text-orange">
             Read article
           </button>
         </a>

@@ -1,13 +1,19 @@
-import CvComponent from './CvComponent.tsx';
-import Projects from './Projects.tsx';
-import Articles from './Articles.tsx';
-import Contact from './Contact.tsx';
+import AboutMe from './AboutMe';
+import Projects from './Projects';
+import Articles from './Articles';
+import Contact from './Contact';
 
-export const routes = [
+interface Route {
+  title: string;
+  href: string;
+  component: React.ComponentType;
+}
+
+export const routes: Route[] = [
   {
     title: 'About me',
     href: '/',
-    component: CvComponent,
+    component: AboutMe,
   },
   {
     title: 'Projects',

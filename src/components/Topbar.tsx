@@ -1,8 +1,8 @@
 import React from 'react';
-import NavMobile from './NavMobile.tsx';
-import NavDesktop from './NavDesktop.tsx';
+import NavMobile from './NavMobile';
+import NavDesktop from './NavDesktop';
 
-const Topbar = () => {
+const Topbar: React.FC = () => {
   return (
     <div>
       <nav className="text-white text-xs flex justify-between border-b border-yellow">

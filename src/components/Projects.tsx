@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Projects = () => {
+const Projects: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center leading-6">
       Projects
