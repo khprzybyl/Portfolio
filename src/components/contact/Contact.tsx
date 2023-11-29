@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from 'react';
-import Notification from './Notification';
+import Notification from '../shared/notification/Notification.tsx';
 
-import CopyableText from './CopyableText';
-import { PersonalData } from './PersonalData';
-import { NotificationMessage } from './MessageText';
+import CopyableText from '../shared/IconCopy.tsx';
+import { ContactData } from './contactData';
+import { NotificationMessage } from '../shared/notification/notificationText.ts';
 
 const Contact: React.FC = () => {
   const [showNotification, setShowNotification] = useState(false);
@@ -22,9 +22,9 @@ const Contact: React.FC = () => {
 
   return (
     <div className="flex flex-col justify-center items-center leading-6 static">
-      <p className=" text-xl font-bold pb-6">{PersonalData.NAME}</p>
-      <CopyableText text={PersonalData.PHONE} onCopy={copyToClipboard} />
-      <CopyableText text={PersonalData.EMAIL} onCopy={copyToClipboard} />
+      <p className=" text-xl font-bold pb-6">{ContactData.NAME}</p>
+      <CopyableText text={ContactData.PHONE} onCopy={copyToClipboard} />
+      <CopyableText text={ContactData.EMAIL} onCopy={copyToClipboard} />
       <Notification
         message={NotificationMessage.SUCCESS_COPY}
         show={showNotification}

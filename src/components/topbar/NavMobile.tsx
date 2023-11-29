@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { routes } from './routes';
+import { routes } from 'routes/routes.ts';
 
 export const NavMobile: React.FC = () => {
   const [isOpen, setOpen] = useState(false);

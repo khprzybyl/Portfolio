@@ -1,5 +1,5 @@
 import React from 'react';
-import watchIcon from '../assets/images/watch.svg';
+import watchIcon from 'assets/svg/watch.svg';
 
 interface ArticleTileProps {
   title: string;

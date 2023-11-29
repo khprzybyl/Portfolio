@@ -1,5 +1,5 @@
 import React from 'react';
-import CopyIcon from '../assets/images/copyIcon.svg';
+import CopyIcon from 'assets/svg/copy.svg';
 
 const CopyableText: React.FC = ({ text, onCopy }) => {
   return (

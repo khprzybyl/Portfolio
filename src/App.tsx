@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { routes } from './components/routes.ts';
-import Topbar from './components/Topbar.tsx';
+import { routes } from './routes/routes.ts';
+import Topbar from './components/topbar/Topbar.tsx';
 
 const App: React.FC = () => {
   return (

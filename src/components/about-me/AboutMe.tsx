@@ -1,7 +1,7 @@
 import React from 'react';
-import DownloadIcon from '../assets/images/downloadIcon.svg';
+import DownloadIcon from 'assets/svg/downloadIcon.svg';
 
-import { TITLE, NAME, ROLE, INTRO_TEXT } from './AboutMeData.ts';
+import { TITLE, NAME, ROLE, INTRO_TEXT } from './aboutMeData.ts';
 
 const AboutMe: React.FC = () => {
   const cvFileName = 'katarzyna_przybyl_cv.pdf';

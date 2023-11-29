@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-key */
 import React from 'react';
-import { routes } from './routes.ts';
+import { routes } from 'routes/routes.ts';
 import { Link } from 'react-router-dom';
-import linkedin from '../assets/images/linkedin.png';
-import github from '../assets/images/github.png';
-import DownloadIcon from '../assets/images/downloadIcon.svg';
-import IconLink from './IconLink';
+import linkedin from 'assets/images/linkedin.png';
+import github from 'assets/images/github.png';
+import DownloadIcon from 'assets/svg/downloadIcon.svg';
+import IconLink from '../shared/IconLink';
 
 const NavDesktop: React.FC = () => {
   const cvFileName = 'katarzyna_przybyl_cv.pdf';

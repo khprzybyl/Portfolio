@@ -1,7 +1,7 @@
-import AboutMe from './AboutMe';
-import Projects from './Projects';
-import Articles from './Articles';
-import Contact from './Contact';
+import AboutMe from 'components/about-me/AboutMe.tsx';
+import Projects from 'components/projects/Projects';
+import Articles from 'components/articles/Articles';
+import Contact from 'components/contact/Contact';
 
 interface Route {
   title: string;

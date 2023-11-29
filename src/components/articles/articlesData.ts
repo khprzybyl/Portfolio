@@ -1,5 +1,5 @@
-import articleImage from '../assets/images/articleImage.jpg';
-import articleImage2 from '../assets/images/articleImage2.jpg';
+import articleImage from 'assets/images/articleImage.jpg';
+import articleImage2 from 'assets/images/articleImage2.jpg';
 
 export interface Article {
   id: number;
