@@ -2,6 +2,7 @@ import AboutMe from 'components/about-me/AboutMe.tsx';
 import Projects from 'components/projects/Projects';
 import Articles from 'components/articles/Articles';
 import Contact from 'components/contact/Contact';
+import ProjectDetails from 'components/projects/ProjectDetails';
 
 interface Route {
   title: string;
@@ -31,3 +32,36 @@ export const routes: Route[] = [
     component: Contact,
   },
 ];
+
+// export const projectsDetailsRoutes: Route[] = [
+//   {
+//     title: 'SugarAssist UI/UX',
+//     href: '/SugarAssist',
+//     component: ProjectDetails,
+//   },
+//   {
+//     title: 'Responisive menu',
+//     href: '/responsive-menu',
+//     component: ProjectDetails,
+//   },
+//   {
+//     title: 'Landing Page',
+//     href: '/landing-page',
+//     component: ProjectDetails,
+//   },
+//   {
+//     title: 'Details',
+//     href: '/details-example',
+//     component: ProjectDetails,
+//   },
+//   {
+//     title: 'DetailsTwo',
+//     href: '/details-example-two',
+//     component: ProjectDetails,
+//   },
+//   {
+//     title: 'DetailsThree',
+//     href: '/details-example-three',
+//     component: ProjectDetails,
+//   },
+// ];

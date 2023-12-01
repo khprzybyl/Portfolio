@@ -1,8 +1,9 @@
 import React from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { routes } from './routes/routes.ts';
-import Topbar from './components/topbar/Topbar.tsx';
+import { routes } from 'routes/routes.ts';
+import Topbar from 'components/topbar/Topbar.tsx';
+import ProjectDetails from 'components/projects/ProjectDetails.tsx';
 
 const App: React.FC = () => {
   return (
@@ -11,13 +12,14 @@ const App: React.FC = () => {
         <Topbar />
         <div className="text-white text-xs flex-col justify-between items-center mb-5 tracking-wider ">
           <Routes>
-            {routes.map((route, index) => (
+            {routes.map((route, title) => (
               <Route
-                key={index}
+                key={title}
                 path={route.href}
                 element={<route.component />}
               />
             ))}
+            <Route path="/projects/:projectName" element={<ProjectDetails />} />
           </Routes>
         </div>
         <a

@@ -1,18 +1,23 @@
 import React from 'react';
+import ProjectTile from './ProjectTile';
+import { ProjectsPack, Project } from './projectsData';
 
 const Projects: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center leading-6">
-      Projects
-      <p>
-        {' '}
-        I’m a person with an artistic approach to web and mobile applications
-        development. I am deeply committed to creating interfaces that
-        seamlessly blend form and function to provide a superior user
-        experience. My action is characterized by independent and critical
-        thinking, empathy and reflection. I strive to design a unique solution
-        based on real requirements rather than guesses and preconceptions.
-      </p>
+    <div className="my-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:max-w-5xl m-auto auto-rows-fr">
+        {ProjectsPack.map((project: Project) => (
+          <ProjectTile
+            key={project.id}
+            id={project.id}
+            title={project.title}
+            subtitle={project.subtitle}
+            description={project.description}
+            onClickMore={project.onClickMore}
+            image={project.image}
+          />
+        ))}
+      </div>
     </div>
   );
 };

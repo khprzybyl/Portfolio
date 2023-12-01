@@ -36,14 +36,17 @@ const ArticleTile: React.FC<ArticleTileProps> = ({
           rel="noopener noreferrer"
           className="flex items-center gap-3 mt-6 "
         >
-          <img src={watchIcon} alt="Github logo" className="h-4 w-auto " />
-
-          <button className="text-dark-blue text-base font-bold hover:text-orange">
+          <button className="bg-yellow rounded-lg px-12 py-3 text-dark-blue text-base font-bold flex items-center justify-center gap-3 shadow-lg hover:shadow-none hover:bg-yellow-dark w-full">
+            <img src={watchIcon} alt="Github logo" className="h-4 w-auto " />
             Read article
           </button>
         </a>
       </div>
-      <img src={image} alt="lol" className="w-full rounded-b-lg" />
+      <img
+        src={image}
+        alt="Graphic illustration of AI-related items including neural networks, data analytics, machine learning, and robotics icons."
+        className="w-full rounded-b-lg"
+      />
     </div>
   );
 };

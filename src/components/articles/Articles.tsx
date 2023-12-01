@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ArticlesPack, Article } from './ArticlesData';
+import { ArticlesPack, Article } from './articlesData';
 import ArticleTile from './ArticleTile';
 
 const Articles: React.FC = () => {

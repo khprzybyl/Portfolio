@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import React from 'react';
 import { routes } from 'routes/routes.ts';
 import { Link } from 'react-router-dom';
