@@ -1,18 +1,24 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Contains projects, CV and links to articles.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository.
+2. Install dependencies using `yarn install`.
 
+## Usage
 
+Run the following command to start the app locally:
 
-Tailwind
-React
-Vite 
+'yarn dev'
 
-Hamburger menu for react animated with Framer Motion
-https://www.freecodecamp.org/news/how-to-create-an-animated-hamburger-menu-in-react/
+## Technologies Used
 
+- React
+- TypeScript
+- Tailwind CSS
+
+## See live
+
+https://katarzynaprzybyl.com/
