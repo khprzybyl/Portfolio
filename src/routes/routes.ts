@@ -2,7 +2,6 @@ import AboutMe from 'components/about-me/AboutMe.tsx';
 import Projects from 'components/projects/Projects';
 import Articles from 'components/articles/Articles';
 import Contact from 'components/contact/Contact';
-import ProjectDetails from 'components/projects/ProjectDetails';
 
 interface Route {
   title: string;

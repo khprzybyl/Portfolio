@@ -28,7 +28,7 @@ const ArticleTile: React.FC<ArticleTileProps> = ({
             {title}
           </h1>
         </a>
-        <h2 className="text-dark-blue py-5 text-base font-light">{subtitle}</h2>
+        <h2 className="text-dark-blue py-5 text-base font-bold">{subtitle}</h2>
         <p className="text-dark-blue ">{description}</p>
         <a
           href={onClickArticle}
