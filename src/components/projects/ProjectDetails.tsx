@@ -5,7 +5,9 @@ import { ProjectsPack } from './projectsData';
 
 const ProjectDetails: React.FC<ProjectDetailsProps> = () => {
   const { projectName } = useParams<{ projectName: string }>();
-  const project = ProjectsPack.find((p) => p.onClickMore === projectName);
+  const project = ProjectsPack.find(
+    (project) => project.onClickMore === projectName,
+  );
 
   if (!project) {
     return <div>Project not found</div>;

@@ -1,9 +1,8 @@
 import articleImage from 'assets/images/articleImage.jpg';
 import articleImage2 from 'assets/images/articleImage2.jpg';
-import mobileView from 'assets/images/login.png';
 import mobileBackground from 'assets/images/Group.png';
 
-export interface Project {
+export interface ProjectsPack {
   id: number;
   title: string;
   subtitle: string;
@@ -13,9 +12,9 @@ export interface Project {
   image: string;
   imageTwo?: string;
   imageThree?: string;
-  onClickMore?: string;
   overview?: string;
   tools?: string[];
+  onClickMore?: string;
   onClickGithub?: string;
   onClickLive?: string;
   mainAssumptions?: string;
@@ -47,11 +46,8 @@ export const ProjectsPack = [
     id: 2,
     title: 'Star Wars Characters Explorer',
 
-    subtitle:
-      'Study case - One-page application with a list of people and the details about their related home planet.',
-    description: `It shows my ability to interact with third-party APIs, shows how I handle dealing with APIs constraints on the frontend, 
-shows my ability to present a UI to the user.
-`,
+    subtitle: '[Study Case]',
+    description: `One-page application with a list of people and the details about their related home planet. `,
     challenge:
       'This app should shows my ability to interact with third-party APIs, shows how I handle dealing with APIs constraints on the frontend, shows my ability to present a UI to the user.',
     tools: [
@@ -69,20 +65,18 @@ shows my ability to present a UI to the user.
     image: articleImage2,
     imageBackground: articleImage2,
     imageTwo: articleImage,
-    onClickMore: 'responsive-menu',
+    onClickMore: 'StarWars',
     onClickGithub: 'https://github.com/khprzybyl',
     onClickLive: '#',
     overview: 'Overview Starwars',
   },
   {
     id: 3,
-    title: 'Landing Page',
-    subtitle: 'Flexbox vs Grid - CSS skills',
-    description: ` This is the project which was created to practice skills in Flexbox
-            and Grid, and to checkout the posibilities of differents approches
-            to achive one result. `,
-    tools: ['REACT', 'JAVASCRIPT', 'TAILWIND', 'FIGMA'],
+    title: 'Wishlist with idea navigator assistant',
+    subtitle: 'Proof concept',
+    description: `Project created to practice skills. It is simple app to vote for ideas - connected with chatGPT `,
+    tools: ['REACT', 'JAVASCRIPT', 'HTML', 'TAILWIND'],
     image: articleImage,
-    onClickMore: 'landing-page',
+    onClickMore: 'Wishlist',
   },
 ];

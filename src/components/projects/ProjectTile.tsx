@@ -33,10 +33,10 @@ const ProjectTile: React.FC<ProjectTileProps> = ({
       </div>
       <button
         onClick={handleSeeDetails}
-        className="mx-6 mb-3 bg-yellow rounded-lg px-12 py-3 text-dark-blue text-base font-bold flex items-center justify-center gap-3 shadow-lg hover:shadow-none hover:bg-yellow-dark"
+        className="mx-6 mb-3 bg-yellow rounded-lg py-3 text-dark-blue text-base font-bold flex items-center justify-center gap-3 shadow-lg hover:shadow-none hover:bg-yellow-dark"
       >
         <img src={watchIcon} alt="Details Link" className="h-4 w-auto" />
-        Read more details
+        Show me more
       </button>
       <img
         src={image}

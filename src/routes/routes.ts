@@ -31,36 +31,3 @@ export const routes: Route[] = [
     component: Contact,
   },
 ];
-
-// export const projectsDetailsRoutes: Route[] = [
-//   {
-//     title: 'SugarAssist UI/UX',
-//     href: '/SugarAssist',
-//     component: ProjectDetails,
-//   },
-//   {
-//     title: 'Responisive menu',
-//     href: '/responsive-menu',
-//     component: ProjectDetails,
-//   },
-//   {
-//     title: 'Landing Page',
-//     href: '/landing-page',
-//     component: ProjectDetails,
-//   },
-//   {
-//     title: 'Details',
-//     href: '/details-example',
-//     component: ProjectDetails,
-//   },
-//   {
-//     title: 'DetailsTwo',
-//     href: '/details-example-two',
-//     component: ProjectDetails,
-//   },
-//   {
-//     title: 'DetailsThree',
-//     href: '/details-example-three',
-//     component: ProjectDetails,
-//   },
-// ];
